@@ -1,0 +1,8 @@
+/spring-base/.mvn
+target/
+.metadata
+/spring-base/mvnw
+/spring-base/mvnw.cmd
+/spring-base/.gitignore
+target/
+/spring-base/src/test
