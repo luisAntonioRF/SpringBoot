@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+ <html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>RequestParam</title>
+</head>
+<body>
+<h4>Envia Parametros por URL</h4>
+<ul>
+<li><a th:href="@{/param/var(texto='Soy un Param')}">Enviar un Parametro</a></li>
+<li><a th:href="@{/param/var(texto='Soy un Param',num=89)}">Enviar 2 Parametros</a></li>
+</ul>
+</body>
+</html>
