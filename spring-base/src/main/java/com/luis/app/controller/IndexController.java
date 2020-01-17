@@ -2,6 +2,8 @@ package com.luis.app.controller;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -15,9 +17,12 @@ public class IndexController {
 
 	public static final String PATH_VIEW = "/view/";
 	
+	@Value("${indexController.msn}")
+	private String textoIndex;
+	
 	@GetMapping("/index")//@GetMapping({"/index","/","/home"})
 	public String msn(Model model) {
-		model.addAttribute("saludo","Saludos desde Spring Boot2");
+		model.addAttribute("saludo",textoIndex);
 		return PATH_VIEW+"index";
 	}
 	
