@@ -2,10 +2,13 @@ package com.luis.app.service;
 
 import org.springframework.stereotype.Component;
 
-@Component
-public class MyService {
+//@Component("simple")
+public class MyService implements IService{
 
+	@Override
 	public String operation() {
-		return "Ejecutando algun preoceso";
+		return "Implementacion Simple";
 	}
+
+	
 }

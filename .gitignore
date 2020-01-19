@@ -6,6 +6,7 @@ target/
 /spring-base/.gitignore
 target/
 /spring-base/src/test
+/spring-di/src/test
 /spring-di/.mvn
 /spring-di/mvnw
 /spring-di/mvnw.cmd
