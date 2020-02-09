@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+ <html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Spring Boot Service</title>
+</head>
+<body>
+<h2 th:text="${obj}"></h2>
+<h3 th:text="${factura.cliente.nombre}"></h3>
+<h3 th:text="${factura.cliente.apellido}"></h3>
+
+<table>
+<thead>
+<tr>
+<td>Producto</td>
+<td>Precio</td>
+<td>Cantidad</td>
+<td>Total</td>
+</tr>
+</thead>
+<tbody>
+<tr th:each="item: ${factura.itenFactura}">
+<td th:text="${item.producto.nombre}"></td>
+<td th:text="${item.producto.precio}"></td>
+<td th:text="${item.cantidad}"></td>
+<td th:text="${item.cantidad*item.producto.precio}"></td>
+</tr>
+</tbody>
+</table>
+
+<span></span>
+</body>
+</html>
