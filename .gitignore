@@ -26,8 +26,6 @@ demo-factura/.settings/org.eclipse.jdt.apt.core.prefs
 demo-factura/.settings/org.eclipse.jdt.core.prefs
 demo-factura/.settings/org.eclipse.m2e.core.prefs
 demo-factura/.settings/org.springframework.ide.eclipse.prefs
-
-
 spring-base/.classpath
 spring-base/.project
 spring-base/.settings/org.eclipse.core.resources.prefs
