@@ -21,5 +21,9 @@ public class ItemFactura {
 	public void setCantidad(int cantidad) {
 		this.cantidad = cantidad;
 	}
+	
+	public int getTotal() {
+		return this.cantidad*this.getProducto().getPrecio();
+	}
 
 }
