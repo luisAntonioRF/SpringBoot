@@ -20,4 +20,11 @@ public class EmpleadosImpl implements IEmpleados{
 		return entityManager.createQuery("from EmpleadosEntity").getResultList();
 	}
 
+	@Override
+	@Transactional
+	public void save(EmpleadosEntity empleado) {
+		entityManager.persist(empleado);
+		
+	}
+
 }

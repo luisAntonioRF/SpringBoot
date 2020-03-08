@@ -6,8 +6,7 @@
 <link rel="stylesheet" type="text/css" th:href="@{/css/bootstrap.min.css}">
 </head>
 <body>
-
-	 <header>
+ <header>
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
 			<a class="navbar-brand" th:href="@{/app/index}">Home</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -25,33 +24,8 @@
 		</nav>
 	</header>
 
-	<div class="container">
-		<h1 class="text-primary">Lista de Empleados</h1>
-
-		<span th:if="${empleados.size() == 0}">No Hay Usuarios</span>
-
-		<table class="table table-striped">
-			<tr>
-				<th>ID</th>
-				<th>NOMBRE</th>
-				<th>APELLIDOS</th>
-				<th>FECHA NACIMIENTO</th>
-				<th>SEXO</th>
-				<th>CARGO</th>
-				<th>SALARIO</th>
-			</tr>
-
-			<tr th:each="em:${empleados}">
-				<td th:text="${em.id}"></td>
-				<td th:text="${em.nombre}"></td>
-				<td th:text="${em.apellidos}"></td>
-				<td th:text="${em.fecha_nac}"></td>
-				<td th:text="${em.sexo}"></td>
-				<td th:text="${em.cargo}"></td>
-				<td th:text="${em.salario}"></td>
-			</tr>
-
-		</table>
-	</div>
+<div align="center">
+<img  alt="" th:src="@{/img/spring.png}" width="200" height="200">
+</div>
 </body>
 </html>
